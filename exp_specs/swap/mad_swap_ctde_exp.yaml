@@ -9,7 +9,7 @@ variables:
 
   horizon: [24]
   returns_scale: [700]
-  dataset: ["swap"]
+  dataset: ["simple_tag-random"]
 
 constants:
   # misc
