@@ -46,7 +46,8 @@ class SequenceDataset(torch.utils.data.Dataset):
 
         assert agent_condition_type in ["single", "all", "random"], agent_condition_type
         self.agent_condition_type = agent_condition_type
-
+        import pdb
+        pdb.set_trace()
         env_mod_name = {
             "d4rl": "diffuser.datasets.d4rl",
             "mahalfcheetah": "diffuser.datasets.mahalfcheetah",
