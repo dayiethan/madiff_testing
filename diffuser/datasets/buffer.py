@@ -124,7 +124,10 @@ class ReplayBuffer:
 
     def finalize(self):
         # remove extra slots
+        print(self.keys)
+        import os
+        os._exit(0)
         for key in self.keys + ["path_lengths"]:
             self._dict[key] = self._dict[key][: self._count]
         self._add_attributes()
-        print(f"[ datasets/buffer ] Finalized replay buffer | {self._count} episodes")
+        print(f"[ datasets/buffer ] Test Finalized replay buffer | {self._count} episodes")
